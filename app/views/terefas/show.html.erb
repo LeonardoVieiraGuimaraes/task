@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @terefa %>
+
+<div>
+  <%= link_to "Edit this terefa", edit_terefa_path(@terefa) %> |
+  <%= link_to "Back to terefas", terefas_path %>
+
+  <%= button_to "Destroy this terefa", @terefa, method: :delete %>
+</div>

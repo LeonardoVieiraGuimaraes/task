@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Terefas</h1>
+
+<div id="terefas">
+  <% @terefas.each do |terefa| %>
+    <%= render terefa %>
+    <p>
+      <%= link_to "Show this terefa", terefa %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New terefa", new_terefa_path %>
