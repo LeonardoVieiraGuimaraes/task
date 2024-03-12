@@ -1,6 +1,6 @@
 # Start from the official Ruby image
 FROM ruby:3.2.3
-# teste
+# testesfs
 # Install Node.js and Yarn (needed for Rails asset compilation)
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client yarn
 
