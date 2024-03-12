@@ -1,5 +1,4 @@
 # Start from the official Ruby image
-# teste
 FROM ruby:3.2.3
 
 # Install Node.js and Yarn (needed for Rails asset compilation)
@@ -22,6 +21,4 @@ COPY . /myapp
 EXPOSE 3000
 
 # Define the command to start the server
-# CMD ["sh", "-c", "bin/rails db:migrate && bin/rails server -b 0.0.0.0"]
-
 CMD ["rails", "server", "-b", "0.0.0.0"]
